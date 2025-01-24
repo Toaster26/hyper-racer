@@ -13,11 +13,6 @@ public class GameTestScript
     private GameObject _leftButton;
     private GameObject _rightButton;
     
-    //플레이 시간
-    private float elapsedTime = 0f;
-    private float targetTime = 0f;
-    
-    
     // A Test behaves as an ordinary method
     [Test]
     public void GameTestScriptSimplePasses()
@@ -72,6 +67,11 @@ public class GameTestScript
         float rayDistance = 10f; 
         Vector3 rayDirection = Vector3.forward;
         
+        //플레이 시간
+        float elapsedTime = 0f; 
+        float targetTime = 10f;
+
+        
         //반복
         while (gameManager.GameState == GameManager.State.Play)
         {
@@ -113,7 +113,7 @@ public class GameTestScript
 
         if (elapsedTime < targetTime)
         {
-            Assert.Fail("Game Time is less than target time");
+            Assert.Fail("Game Time is too short");
         }
         
         yield return null;
