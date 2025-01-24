@@ -153,6 +153,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67a78670b35faea4f85f73fbdcfca18c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gasObjects:
+  - {fileID: 5300507519463008305, guid: 82d0e8eafa4217345a87dfd978b88d09, type: 3}
+  - {fileID: 5300507519463008305, guid: 82d0e8eafa4217345a87dfd978b88d09, type: 3}
+  - {fileID: 5300507519463008305, guid: 82d0e8eafa4217345a87dfd978b88d09, type: 3}
 --- !u!65 &5019824751571658823
 BoxCollider:
   m_ObjectHideFlags: 0
