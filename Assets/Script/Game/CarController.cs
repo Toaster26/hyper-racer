@@ -35,8 +35,11 @@ public class CarController : MonoBehaviour
    
    public void Move(float direction)
    {
-      transform.Translate(Vector3.right * direction * Time.deltaTime);
-      transform.position = new Vector3(Mathf.Clamp(transform.position.x,-1.5f, 1.5f), 0, transform.position.z);
+      if (this != null)
+      {
+         transform.Translate(Vector3.right * direction * Time.deltaTime);
+         transform.position = new Vector3(Mathf.Clamp(transform.position.x,-1.5f, 1.5f), 0, transform.position.z);
+      }
    }
 
    private void OnTriggerEnter(Collider other)
