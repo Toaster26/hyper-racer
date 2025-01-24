@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
         GameState = State.Start;
         
         //게임 시작
-        StartGame();
+        ShowStartPanel();
     }
 
     private void Update()

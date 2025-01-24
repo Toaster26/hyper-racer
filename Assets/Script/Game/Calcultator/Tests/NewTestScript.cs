@@ -11,10 +11,10 @@ public class NewTestScript
     public void NewTestScriptSimplePasses()
     {
         // Use the Assert class to test conditions
-        // Assert.AreEqual(2, Calculator.Add(1,1));
-        // Assert.AreEqual(2, Calculator.Subtract(1,1));
-        // Assert.AreEqual(2, Calculator.Multiply(2,2));
-        // Assert.AreEqual(2, Calculator.Divide(4,2));
+        Assert.AreEqual(2, Calculator.Add(1,1));
+        Assert.AreEqual(0, Calculator.Subtract(1,1));
+        Assert.AreEqual(4, Calculator.Multiply(2,2));
+        Assert.AreEqual(2, Calculator.Divide(4,2));
         
     }
 
